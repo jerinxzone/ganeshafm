@@ -34,3 +34,14 @@ client.on("message", message => {
 
 /*/* Login as the bot. /*/
 client.login(config.token);
+
+/*/* STATUS BOT /*/
+client.on("ready", () => {
+    client.user.setPresence({
+        game: { 
+            name: 'Radio Online GaneshaFM',
+            type: 'PLAYING'
+        },
+        status: 'idle'
+    })
+})
