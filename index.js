@@ -5,7 +5,7 @@ const opusscript = require("opusscript");
 const client = new Discord.Client();
 const fs = require("fs");
 const config = require("./config.json");
-
+const bot = new Discord.Client();
 
 /*/ Start of loading events /*/
 fs.readdir("./events/", (err, files) => {
@@ -34,3 +34,7 @@ client.on("message", message => {
 
 /*/* Login as the bot. /*/
 client.login(config.token);
+bot.on("ready", () => {
+  console.log("Ready");
+  bot.user.setActivity("Playing Radio Indonesia GaneshaFM");
+}
