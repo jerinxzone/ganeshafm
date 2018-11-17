@@ -7,4 +7,18 @@
     "node-opus": "^0.2.7",
     "opusscript": "0.0.6"
   }
+  
+    "name": "Example",
+
+  "description": "Example",
+
+  "version": "0.0.0",
+
+  "main": "index.js",
+
+  "scripts": {
+
+    "start": "node index.js"
+
+  },
 }
