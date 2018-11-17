@@ -1,0 +1,22 @@
+{
+    "prambors": {
+        "name" : "Prambors FM",
+        "url" : "http://masima.rastream.com/masima-pramborsjakarta?"
+    },
+    "gen": {
+        "name" : "Gen FM",
+        "url" : "http://streaming.sim-indonesia.com:8000/genfm"
+    },
+    "giri": {
+        "name" : "Giri FM",
+        "url" : "http://streaming.girifm.com:8010/;"
+    },
+	"kisstory": {
+        "name" : "Kisstory",
+        "url" : "http://kisstory.kissfmuk.com/live/"
+    },
+	"kissfresh": {
+        "name" : "Kiss Fresh",
+        "url" : "http://kissfresh.kissfmuk.com/live/"
+    }
+}
