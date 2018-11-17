@@ -42,6 +42,6 @@ client.on("ready", () => {
             name: 'Radio Online GaneshaFM',
             type: 'PLAYING'
         },
-        status: 'idle'
+        status: 'online'
     })
 })
