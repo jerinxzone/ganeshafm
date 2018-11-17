@@ -118,5 +118,3 @@ exports.run = (client, message, args) => {
       }
     };
   
-
-Kamu tidak berada di voice channel
