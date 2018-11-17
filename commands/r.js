@@ -18,6 +18,13 @@ exports.run = (client, message, args) => {
 	const indika = "http://103.16.199.177:9160/;stream.nsv";
 	const mendhut = "http://streaming.mendhutfm.com:8790/stream?";
 	const rws = "https://mediacp.xajist.com/Api/Url/Stream/RWS/;";
+	const istara = "http://istarafm.onlivestreaming.net:10110/live";
+	const ardan = "http://listento.ardanradio.com:1059/live";
+	const matrix = "http://live.radiomatrixfm.com:8000/listen.pls";
+	const djfm = "http://u.klikhost.com:8000/djfm";
+	const rdi = "http://202.147.199.99:8000/stream/1/";
+	const mayangkara = "http://streaming.mayangkara.net:8000/mayangkara-aacmed";
+	
 	
 	
       if((message.content == "!r prambors") || (message.content == "!r prambors fm") || (message.content == "!r pramborsfm") || (message.content == "!r prambors jakarta")) {
@@ -120,6 +127,62 @@ exports.run = (client, message, args) => {
           })
           .catch(console.log);
       }
+	  
+	  
+	  	  	  	  	  	  	else if((message.content == "!r istara") || (message.content == "!r istarafm") || (message.content == "!r istarafmradio")|| (message.content == "!r radio istara")){
+        message.member.voiceChannel.join()
+          .then(connection => {
+            message.reply('Connected! Playing ISTARA FM..');
+            connection.playArbitraryInput(`${istara}`);
+          })
+          .catch(console.log);
+      }
+	  
+	  	  	  	  	  	  	else if((message.content == "!r ardan") || (message.content == "!r ardanfm") || (message.content == "!r radioardan")|| (message.content == "!r radio ardan")){
+        message.member.voiceChannel.join()
+          .then(connection => {
+            message.reply('Connected! Playing ARDAN FM..');
+            connection.playArbitraryInput(`${ardan}`);
+          })
+          .catch(console.log);
+      }
+	  
+	  	  	  	  	  	  	else if((message.content == "!r matrix") || (message.content == "!r matrixponorogo") || (message.content == "!r matrixfm")|| (message.content == "!r radio matrix")){
+        message.member.voiceChannel.join()
+          .then(connection => {
+            message.reply('Connected! Playing MATRIX FM PONOROGO..');
+            connection.playArbitraryInput(`${matrix}`);
+          })
+          .catch(console.log);
+      }
+	  
+	  	  	  	  	  	  	else if((message.content == "!r djfm") || (message.content == "!r dj") || (message.content == "!r fmdj")|| (message.content == "!r radio djfm")){
+        message.member.voiceChannel.join()
+          .then(connection => {
+            message.reply('Connected! Playing DJ FM..');
+            connection.playArbitraryInput(`${djfm}`);
+          })
+          .catch(console.log);
+      }
+	  
+	  	  	  	  	  	  	else if((message.content == "!r rdi") || (message.content == "!r dangdut indonesia") || (message.content == "!r rwsfm")|| (message.content == "!r radio dangdut indonesia")){
+        message.member.voiceChannel.join()
+          .then(connection => {
+            message.reply('Connected! Playing RADIO DANGDDUT INDONESIA..');
+            connection.playArbitraryInput(`${rdi}`);
+          })
+          .catch(console.log);
+      }
+	  
+	  	  	  	  	  	  	else if((message.content == "!r mayangkara") || (message.content == "!r mayangkara blitar") || (message.content == "!r mayangkarafm")|| (message.content == "!r radio mayangkara")){
+        message.member.voiceChannel.join()
+          .then(connection => {
+            message.reply('Connected! Playing MAYANGKARA FM BLITAR..');
+            connection.playArbitraryInput(`${mayangkara}`);
+          })
+          .catch(console.log);
+      }
+	  
 	  
 	  else {
         message.reply('Nama Radio Salah');
