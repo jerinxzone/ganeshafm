@@ -6,7 +6,7 @@ exports.run = (client, message, args) => {
 
       if (message.member.voiceChannel) {
         message.member.voiceChannel.leave()
-      message.reply('Left Voice Channel.');
+      message.reply('Radio Stoped.');
 	  return this.client.destroy();
     };
   }
