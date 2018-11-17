@@ -6,7 +6,7 @@ exports.run = (client, message, args) => {
   
   if (args.length === 0)
   return message.reply("Mana Nama Radionya");
-
+	
     const prambors = "http://masima.rastream.com/masima-pramborsjakarta?";
 	const patria = "http://www.radiopatria.net:8000/stream";
 	const gen = "http://streaming.sim-indonesia.com:8000/genfm";
@@ -50,7 +50,7 @@ exports.run = (client, message, args) => {
         message.member.voiceChannel.join()
           .then(connection => {
             message.reply('Connected! Playing WIJAYAFM SURABAYA..');
-            connection.playArbitraryInput(`${gen}`);
+            connection.playArbitraryInput(`${wijaya}`);
           })
           .catch(console.log);
       }
