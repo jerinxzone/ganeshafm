@@ -37,4 +37,4 @@ client.login(config.token);
 bot.on("ready", () => {
   console.log("Ready");
   bot.user.setActivity("Playing Radio Indonesia GaneshaFM");
-}
+});
