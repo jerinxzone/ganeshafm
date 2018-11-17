@@ -1,5 +1,3 @@
-const Discord = require("discord.js");
-const bot = new Discord.Client();
 const config = require('../config.json');
 
 exports.run = (client) => {
@@ -8,6 +6,3 @@ exports.run = (client) => {
     console.log(`[Radio-Streaming-Bot] Bot Invite: https://discordapp.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot`);
   }
 
-bot.on("ready", () => {
-  bot.user.setActivity("Playing Radio Indonesia GaneshaFM");
-}
