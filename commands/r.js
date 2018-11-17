@@ -17,6 +17,7 @@ exports.run = (client, message, args) => {
 	const hardrock = "http://cloudstreaming.mramedia.com:8001/live";
 	const indika = "http://103.16.199.177:9160/;stream.nsv";
 	const mendhut = "http://streaming.mendhutfm.com:8790/stream?";
+	const rws = "https://mediacp.xajist.com/Api/Url/Stream/RWS/;";
 	
 	
       if((message.content == "!r prambors") || (message.content == "!r prambors fm") || (message.content == "!r pramborsfm") || (message.content == "!r prambors jakarta")) {
@@ -111,7 +112,14 @@ exports.run = (client, message, args) => {
           })
           .catch(console.log);
       }
-	  
+	  	  	  	  	  	else if((message.content == "!r wijangsongko") || (message.content == "!r rws") || (message.content == "!r rwsfm")|| (message.content == "!r radio wijangsongko")){
+        message.member.voiceChannel.join()
+          .then(connection => {
+            message.reply('Connected! Playing WIJANGSONGKO FM KEDIRI..');
+            connection.playArbitraryInput(`${rws}`);
+          })
+          .catch(console.log);
+      }
 	  
 	  else {
         message.reply('Nama Radio Salah');
