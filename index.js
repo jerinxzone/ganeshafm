@@ -34,4 +34,3 @@ client.on("message", message => {
 
 /*/* Login as the bot. /*/
 client.login(config.token);
-client.user.setActivity("Playing Radio Online GaneshaFM"):
