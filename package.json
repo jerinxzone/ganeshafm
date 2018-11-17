@@ -6,13 +6,13 @@
     "ffmpeg-binaries": "^3.2.2-3",
     "node-opus": "^0.2.7",
     "opusscript": "0.0.6"
-  }
+  },
   
-    "name": "Example",
+    "name": "ganeshafm",
 
-  "description": "Example",
+  "description": "ganeshafm",
 
-  "version": "0.0.0",
+  "version": "1.0.0",
 
   "main": "index.js",
 
@@ -20,5 +20,5 @@
 
     "start": "node index.js"
 
-  },
+  }
 }
