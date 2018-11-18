@@ -10,7 +10,7 @@ exports.run = (client, message, args) => {
     const prambors = "http://masima.rastream.com/masima-pramborsjakarta?";
 	const patria = "http://www.radiopatria.net:8000/stream";
 	const gen = "http://externals.streema.com/radios/play/103802";
-	const gensby = "http://1031gen.fm/streaming";
+	const gensbyradio = "http://1031gen.fm/streaming";
 	const wijaya = "http://wijayafm.onlivestreaming.net:9880/live";
 	const giri = "http://streaming.girifm.com:8010/;";
 	const swaragama = "http://jkt.jogjastreamers.com:8000/swaragama456789stereo";
@@ -40,7 +40,7 @@ exports.run = (client, message, args) => {
         message.member.voiceChannel.join()
           .then(connection => {
             message.reply('Connected! Playing GENFM JAKARTA..');
-            connection.playArbitraryInput(`${gen}`);
+            connection.playRawStream(`${gen}`);
           })
           .catch(console.log);
       }
@@ -49,7 +49,7 @@ exports.run = (client, message, args) => {
         message.member.voiceChannel.join()
           .then(connection => {
             message.reply('Connected! Playing GENFM SURABAYA..');
-            connection.playArbitraryInput(`${gensby}`);
+            connection.playRawStream(`${gensbyradio}`);
           })
           .catch(console.log);
       }
