@@ -9,8 +9,8 @@ exports.run = (client, message, args) => {
 	
     const prambors = "http://masima.rastream.com/masima-pramborsjakarta?";
 	const patria = "http://www.radiopatria.net:8000/stream";
-	const gen = "http://streaming.sim-indonesia.com:8000/genfm";
-	const gensby = "http://streaming.sim-indonesia.com:8000/gensby";
+	const gen = "http://www.987genfm.com/streaming";
+	const gensby = "http://1031gen.fm/streaming";
 	const wijaya = "http://wijayafm.onlivestreaming.net:9880/live";
 	const giri = "http://streaming.girifm.com:8010/;";
 	const swaragama = "http://jkt.jogjastreamers.com:8000/swaragama456789stereo";
