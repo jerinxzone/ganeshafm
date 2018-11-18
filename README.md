@@ -1,5 +1,5 @@
-# Discord Radio Streaming Bot
-A bot built on Discord.js to play Radio Streams!
+# Discord Indonesia Radio Streaming Bot
+A bot built on Discord.js to play Indonesia Radio Streams!
 
 
 <b>How to install and run the bot.</b>
