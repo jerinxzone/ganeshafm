@@ -40,7 +40,7 @@ exports.run = (client, message, args) => {
         message.member.voiceChannel.join()
           .then(connection => {
             message.reply('Connected! Playing GENFM JAKARTA..');
-            connection.playArbitraryInput(`${gen}`);
+            connection.playStream(`${gen}`);
           })
           .catch(console.log);
       }
@@ -49,7 +49,7 @@ exports.run = (client, message, args) => {
         message.member.voiceChannel.join()
           .then(connection => {
             message.reply('Connected! Playing GENFM SURABAYA..');
-            connection.playArbitraryInput(`${gensby}`);
+            connection.playStream(`${gensby}`);
           })
           .catch(console.log);
       }
